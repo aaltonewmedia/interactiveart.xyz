@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Interactive Art</title>
+    <link>https://interactiveart.xyz/</link>
+    <description>Recent content on Interactive Art</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 14 Jan 2022 14:35:28 +0200</lastBuildDate><atom:link href="https://interactiveart.xyz/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
