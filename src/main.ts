@@ -32,7 +32,7 @@ function init() {
                 min: gl.LINEAR,
                 wrap: gl.CLAMP_TO_EDGE,
             },
-            blackLogo: { src: "/static/BlackLogo.png" },
+            blackLogo: { src: <TexImageSource> document.querySelector(".black-logo") },
         }, () => {
             resolve(null);
         });
