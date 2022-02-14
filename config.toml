@@ -1,8 +1,0 @@
-baseURL = 'https://interactiveart.xyz'
-languageCode = 'en-us'
-defaultContentLanguage = 'en'
-title = 'Interactive Art'
-theme = 'cupper-hugo-theme'
-
-[markup.goldmark.renderer]
-unsafe= true
