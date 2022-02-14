@@ -1,6 +1,6 @@
 import * as twgl from 'twgl.js';
-
-
+import fragmentShader from './fragment.glsl';
+import vertexShader from './vertex.glsl';
 
 function init() {
     const glCanvas = <HTMLCanvasElement> document.getElementById("c");
@@ -13,7 +13,7 @@ function init() {
 
     glCanvas.style.display = null!;
 
-    const programInfo = twgl.createProgramInfo(gl, ["vertex-shader", "fragment-shader"]);
+    const programInfo = twgl.createProgramInfo(gl, [vertexShader, fragmentShader]);
 
     const arrays = {
         position: [-1, -1, 0, 1, -1, 0, -1, 1, 0, -1, 1, 0, 1, -1, 0, 1, 1, 0],
