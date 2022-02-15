@@ -6,7 +6,7 @@ function init() {
     const glCanvas = <HTMLCanvasElement> document.getElementById("c");
     const gl = <WebGLRenderingContext> glCanvas.getContext("webgl", {
         alpha: true,
-        premultipliedAlpha: false
+        premultipliedAlpha: true
     });
 
     if (!gl) return;

@@ -211,5 +211,6 @@ void main() {
 	float tresh = mix(1.0, TRESH, 1.0);
 	vec4 finalColor = noise > tresh ? color1 * vec4(shadowNoise < tresh ? vec3(0.75) : vec3(1.0), easeOutCubic(min(1.0, u_time / 2.0))) : color2;
 	gl_FragColor = finalColor;
+	gl_FragColor = vec4(gl_FragColor.rgb * gl_FragColor.a, gl_FragColor.a);
 
 }
