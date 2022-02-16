@@ -1,3 +1,5 @@
+$column_width: 700px;
+
 @font-face {
   font-family: "Queens";
   src: url("/static/fonts/Queens-Light.woff");
@@ -78,7 +80,7 @@ h4 {
 }
 
 .content {
-  padding: 50px 15px;
+  padding: 50px 30px;
 }
 
 #title {
@@ -148,13 +150,13 @@ p {
       }
     }
     .header-description {
-      max-width: 600px;
+      max-width: $column_width;
       margin: 0 auto;
     }
   }
   
   .content-columns {
-    max-width: 600px;
+    max-width: $column_width;
     margin: 0 auto;
 
     display: flex;
@@ -184,7 +186,9 @@ p {
       display: flex;
       flex-direction: column;
       .info {
-        margin-top: 4px;
+        font-family: "Queens";
+        line-height: 1.3;
+        margin-top: 6px;
         margin-bottom: 20px;
         font-size: 30px;
       }
@@ -208,7 +212,7 @@ p {
 .time {
   span:first-child {
     display: inline-block;
-    min-width: 60%;
+    min-width: 40%;
     @media (max-width: 800px) {
       min-width: 40%;
     }
