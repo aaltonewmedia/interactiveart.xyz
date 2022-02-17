@@ -117,6 +117,19 @@ function init() {
             render()
         })
 
+
+    let statement = <HTMLElement> document.querySelector(".accessability_statement");
+    document.querySelector(".accessability_btn")
+        ?.addEventListener("click", (e) => {
+            e.preventDefault()
+            if (statement.style.display == "none") {
+                statement.style.display = "inline";
+            }
+            else {
+                statement.style.display = "none";
+            }
+        })
+
     
 }
 

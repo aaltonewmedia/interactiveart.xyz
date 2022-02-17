@@ -10,11 +10,8 @@ jobs:
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v2
-    
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.2.0
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
       with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./dist/
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist

@@ -1,49 +1,49 @@
 $column_width: 700px;
 
 @font-face {
-  font-family: "Queens";
-  src: url("/static/fonts/Queens-Light.woff");
-  src: url("/static/fonts/Queens-Light.woff2") format("woff2"), url("/static/fonts/Queens-Light.woff") format("woff"),
-    url("/static/fonts/Queens-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
+    font-family: "Queens";
+    src: url("/static/fonts/Queens-Light.woff");
+    src: url("/static/fonts/Queens-Light.woff2") format("woff2"), url("/static/fonts/Queens-Light.woff") format("woff"),
+        url("/static/fonts/Queens-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
 }
 
 .black-logo {
-  display: none;
+    display: none;
 }
 
 html {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .header-container {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
 }
 
 canvas {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 5;
-  top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 5;
+    top: 0;
 }
 
 video {
-  display: none;
+    display: none;
 }
 
 body {
-  /*background: linear-gradient(180deg, rgba(36,32,90,1) 0%, rgba(190,235,255,1) 100%);*/
-  background-color: #3c538c; /*rgb(250, 247, 247);*/
-  color: #dbe1ff;
-  margin: 0;
-  padding: 0;
-  font-family: "Lato", sans-serif;
+    /*background: linear-gradient(180deg, rgba(36,32,90,1) 0%, rgba(190,235,255,1) 100%);*/
+    background-color: #3c538c; /*rgb(250, 247, 247);*/
+    color: #dbe1ff;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
 }
 
 h1,
@@ -52,173 +52,216 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Queens";
-  margin: 0;
-  padding: 0;
-  margin-top: 5px;
+    font-family: "Queens";
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
 }
 
 h1 {
-  font-size: 70px;
+    font-size: 80px;
 }
 
 h2 {
-  font-size: 40px;
+    font-size: 40px;
 }
 
 h3 {
-  font-size: 32px;
+    font-size: 28px;
 }
 
 h4 {
-  font-family: "Lato", sans-serif;
-  text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: 3px;
-  font-weight: 300;
-  margin-top: 0px;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: 300;
+    margin-top: 0px;
 }
 
 .content {
-  padding: 50px 30px;
+    padding: 50px 30px;
 }
 
 #title {
-  font-size: 220px;
-  line-height: 1.03;
-  letter-spacing: -3px;
-  opacity: 1;
-  margin: 0;
-  padding: 0;
-  color: #dbe1ff;
-  text-align: center;
-  max-width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: 18px;
+    font-size: 220px;
+    line-height: 1.03;
+    letter-spacing: -3px;
+    opacity: 1;
+    margin: 0;
+    padding: 0;
+    color: #dbe1ff;
+    text-align: center;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 18px;
 }
 
 .gl-loaded #title {
-  opacity: 0;
+    opacity: 0;
 }
 
 @media (max-width: 1000px) {
-  #title {
-    font-size: 200px;
-  }
+    #title {
+        font-size: 200px;
+    }
 }
 
 @media (max-width: 800px) {
-  #title {
-    font-size: 130px;
-  }
+    #title {
+        font-size: 130px;
+    }
 }
 
 @media (max-width: 500px) {
-  #title {
-    font-size: 110px;
-    margin-top: 5px;
-    line-height: 1;
-  }
+    #title {
+        font-size: 110px;
+        margin-top: 5px;
+        line-height: 1;
+    }
 }
 
 p {
-  line-height: 1.7;
-  font-size: 18px;
+    line-height: 1.7;
+    font-size: 18px;
 }
 
 .header-description {
-  margin: 80px 30px;
-  margin-top: 80px;
-  font-size: 18px;
+    margin: 80px 30px;
+    margin-top: 80px;
+    font-size: 18px;
 }
 
 .content {
-  .subtitle-container {
-    .header {
-      margin-bottom: 20px;
-      text-align: center;
-      max-width: 800px;
-      margin: 0px auto;
-      margin-top: 0px;
-      margin-bottom: 130px;
-      @media (max-width: 500px) {
-        margin-bottom: 180px;
-        margin-top: 120px;
-      }
-    }
-    .header-description {
-      max-width: $column_width;
-      margin: 0 auto;
-    }
-  }
-  
-  .content-columns {
-    max-width: $column_width;
-    margin: 0 auto;
-
-    display: flex;
-    flex-direction: row;
-    margin-top: 100px;
-    @media (max-width: 500px) {
-      margin-top: 50px;
+    .subtitle-container {
+        .header {
+            margin-bottom: 20px;
+            text-align: center;
+            max-width: 800px;
+            margin: 0px auto;
+            margin-top: 0px;
+            margin-bottom: 130px;
+            @media (max-width: 500px) {
+                margin-bottom: 180px;
+                margin-top: 120px;
+            }
+        }
+        .header-description {
+            max-width: $column_width;
+            margin: 0 auto;
+        }
     }
 
-    
+    .content-columns {
+        max-width: $column_width;
+        margin: 0 auto;
 
-    .left-col {
-      flex-grow: 1;
-      max-width: 50%;
-      padding-right: 30px;
-    }
+        display: flex;
+        flex-direction: row;
+        margin-top: 100px;
+        @media (max-width: 500px) {
+            margin-top: 50px;
+        }
 
-    .right-col {
-      padding-left: 30px;
-    }
+        .left-col {
+            flex-grow: 1;
+            max-width: 50%;
+            padding-right: 30px;
+        }
 
-    .artists {
-      margin-top: 10px;
-    }
+        .right-col {
+            padding-left: 30px;
+        }
 
-    .info-container {
-      display: flex;
-      flex-direction: column;
-      .info {
-        font-family: "Queens";
-        line-height: 1.3;
-        margin-top: 6px;
-        margin-bottom: 20px;
-        font-size: 30px;
-      }
-    }
+        .artists {
+            margin-top: 10px;
+        }
 
-    @media (max-width: 800px) {
-      flex-direction: column;
-      .left-col {
-        max-width: 100%;
-        margin-bottom: 50px;
-        padding-right: 0px;
-      }
-      .right-col {
-        padding-left: 0px;
-      }
+        .info-container {
+            display: flex;
+            flex-direction: column;
+            .info {
+                font-family: "Queens";
+                line-height: 1.3;
+                margin-top: 6px;
+                margin-bottom: 20px;
+                font-size: 30px;
+            }
+        }
+
+        @media (max-width: 800px) {
+            flex-direction: column;
+            .left-col {
+                max-width: 100%;
+                margin-bottom: 50px;
+                padding-right: 0px;
+            }
+            .right-col {
+                padding-left: 0px;
+            }
+        }
     }
-  }
 }
 
-
 .time {
-  span:first-child {
-    display: inline-block;
-    min-width: 40%;
-    @media (max-width: 800px) {
-      min-width: 40%;
+    span:first-child {
+        display: inline-block;
+        min-width: 40%;
+        @media (max-width: 800px) {
+            min-width: 40%;
+        }
     }
-  }
 
-  span:nth-child(2) {
+    span:nth-child(2) {
+    }
+}
+
+a {
+    color: #dbe1ff;
+    &:visited {
+        color: #dbe1ff;
+    }
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.footer {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .aalto-logo {
+        width: 250px;
+    }
+
     
-  }
+
+    .accessability_statement_containter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 400px;
+        font-size: 14px;
+        
+        .accessability_btn {
+            opacity: 0.6;
+            margin-bottom: 10px;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .accessability_statement {
+            line-height: 1.3;
+        }
+    }
 }
